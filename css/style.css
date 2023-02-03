@@ -1,18 +1,4 @@
 /* General styles */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .link {
   text-decoration: none;
 }
@@ -22,12 +8,12 @@
 }
 
 .body {
-  font-family: "Roboto , Raleway";
+  font-family: "Roboto";
 }
 
 /* header styles */
 
-.header-logo-link {
+.header-logo-link1 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -51,6 +37,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+
+.header-active-link:hover,
+.header-active-link:focus {
+  color: #404bbf;
 }
 
 .header-list-link {
@@ -92,16 +83,58 @@
   background-color: #2e2f42;
 }
 
-.gallery-list-button {
+.button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+.hero-button {
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+.hero-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.gallery-list-button {
+  color: #4d5ae5;
   font-family: inherit;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gallery-list-button:hover,
+.gallery-list-button:focus {
+  background-color: #404bbf;
+  color: #ffffff;
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .gallery-list-title {
@@ -124,50 +157,26 @@
   color: #757575;
 }
 
-.hero-button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  font-family: inherit;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 /* Advantage styles */
 
 .advantage-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .advantage-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* About styles */
@@ -185,6 +194,10 @@
 
 /* Team styles */
 
+.team {
+  background-color: #f4f4fd;
+}
+
 .team-title {
   font-family: "Roboto";
   font-style: normal;
@@ -200,11 +213,11 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 24px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .team-list-text {
@@ -212,10 +225,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* Footer styles */
@@ -225,6 +238,8 @@
 }
 
 .footer-logo-link1 {
+  width: 44px;
+  height: 22px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -238,6 +253,8 @@
 }
 
 .footer-logo-link2 {
+  width: 71px;
+  height: 22px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
