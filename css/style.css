@@ -1,4 +1,10 @@
 /* General styles */
+:root {
+  --brand-color: #757575;
+  --twice-color: #212121;
+  --triple-color: #2e2f42;
+}
+
 .link {
   text-decoration: none;
 }
@@ -7,15 +13,16 @@
   list-style: none;
 }
 
-.body {
+body {
   font-family: "Roboto";
+  background: #ffffff;
+  color: var(--brand-color);
 }
 
 /* header styles */
 
-.header-logo-link1 {
+.header-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -23,20 +30,6 @@
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-}
-
-.header-logo-link2 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #2e2f42;
 }
 
 .header-active-link:hover,
@@ -45,47 +38,39 @@
 }
 
 .header-list-link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--twice-color);
 }
 
 .header-mail-link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--brand-color);
 }
 
 .header-tel-link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--brand-color);
 }
 
 /* hero styles */
 .hero {
-  background-color: #2e2f42;
+  background: var(--triple-color);
 }
 
-.hero-list {
-  background-color: #2e2f42;
+.team {
+  background: #f4f4fd;
 }
 
 .button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -108,8 +93,6 @@
 }
 
 .hero-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -138,40 +121,32 @@
 }
 
 .gallery-list-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--twice-color);
 }
 
 .gallery-list-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--brand-color);
 }
 
 /* Advantage styles */
 
 .advantage-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--triple-color);
 }
 
 .advantage-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -182,14 +157,12 @@
 /* About styles */
 
 .about-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--twice-color);
 }
 
 /* Team styles */
@@ -199,30 +172,24 @@
 }
 
 .team-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--twice-color);
 }
 
 .team-list-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--triple-color);
 }
 
 .team-list-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -234,14 +201,11 @@
 /* Footer styles */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--triple-color);
 }
 
-.footer-logo-link1 {
-  width: 44px;
-  height: 22px;
+.footer-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -252,24 +216,7 @@
   color: #4d5ae5;
 }
 
-.footer-logo-link2 {
-  width: 71px;
-  height: 22px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-}
-
 .footer-tagline {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
