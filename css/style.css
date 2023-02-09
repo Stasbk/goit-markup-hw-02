@@ -21,7 +21,7 @@ body {
 
 /* header styles */
 
-.header-logo {
+.header-logo1 {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -30,6 +30,19 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4D5AE5;
+}
+
+.header-logo2 {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--triple-color)
 }
 
 .header-active-link:hover,
@@ -204,7 +217,7 @@ body {
   background-color: var(--triple-color);
 }
 
-.footer-logo {
+.footer-logo1 {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -214,6 +227,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.footer-logo2 {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F4F4FD;
 }
 
 .footer-tagline {
